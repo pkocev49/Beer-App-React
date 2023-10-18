@@ -1,21 +1,3 @@
-/* .selectDiv {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 30px;
-}
-
-select {
-  padding: 10px;
-  border-radius: 5px;
-  background-color: red;
-  color: white;
-  width: 120px;
-}
-option {
-  background-color: white;
-  color: black;
-} */
-
 
 .selectDiv {
   display: flex;

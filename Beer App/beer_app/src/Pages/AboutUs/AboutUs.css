@@ -1,40 +1,6 @@
-/* .about-us {
-  width: 100%;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 0 auto;
-  
-}
-.pDiv {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-}
 
-.about-us h2 {
-  font-size: 3rem;
-  color: #333;
-  margin-bottom: 100px;
-  margin-left: 100px;
-  
-}
 
-.about-us p {
-  font-size: 1.2rem;
-  color: #555;
-
-  text-align: justify;
-  border: 2px solid lightgray;
-  padding: 20px;
-  border-radius: 10px;
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
  
-}
-
- */
  .about-us {
   width: 100%;
   border-radius: 10px;
