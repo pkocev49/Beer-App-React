@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:5173/beers -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./My Beer App_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Beer App</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/pk/Desktop/COURSES/SEDC-AND-COURSES-main/SEDC-AND-COURSES/SEDC AND COURSES/PROJECTS/Beer App/beer_app/src/Components/Header/Header.css">/* .navigation {
+  font-size: 0.8rem;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.navlinks {
+  list-style: none;
+  display: flex;
+  margin-top: 0;
+}
+
+li {
+  cursor: pointer;
+  color: black;
+  font-size: 1.3rem;
+}
+
+.link {
+  text-decoration: none;
+}
+
+
+.searchInput {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #555;
+  color: #fff;
+  width: 100%;
+  max-width: 300px; 
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px;
+  transition: 0.4s;
+}
+
+.open .bar:nth-child(1) {
+  transform: translateY(7px) rotate(-45deg);
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(45deg);
+}
+
+.navigation.open .navlinks {
+  animation: slide-in 0.4s forwards;
+}
+
+
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.navigation.open .search {
+  animation: slide-in 0.4s forwards;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+
+  .navigation.open {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+   margin: 0 auto;
+  }
+
+  .search {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+  .searchInput {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+} */
+
+
+.navigation {
+  font-size: 0.8rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Add this line to vertically align the nav links and search bar */
+}
+
+li {
+  cursor: pointer;
+  color: black;
+  font-size: 1.3rem;
+  margin-right: 20px; /* Add margin-right to create space between nav links */
+}
+
+.link {
+  text-decoration: none;
+}
+
+.searchInput {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #555;
+  color: #fff;
+  width: 100%;
+  max-width: 400px;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 10px; /* Add margin-right to create space between burger menu and nav links */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px;
+  transition: 0.4s;
+}
+
+.open .bar:nth-child(1) {
+  transform: translateY(7px) rotate(-45deg);
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(45deg);
+}
+
+.navigation.open .navlinks {
+  animation: slide-in 0.4s forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.navigation.open .search {
+  animation: slide-in 0.4s forwards;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+
+  .navigation.open {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0 auto;
+  }
+
+  .search {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+  .navlinks{
+    font-size: 1rem;
+  }
+
+  .searchInput {
+    margin-top: 0;
+  }
+}
+
+/* .navigation {
+  font-size: 0.8rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  margin-top: 0;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  color: black;
+  font-size: 1.3rem;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.searchInput {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #555;
+  color: #fff;
+  width: 100%;
+  max-width: 300px;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px;
+  transition: 0.4s;
+}
+
+.open .bar:nth-child(1) {
+  transform: translateY(7px) rotate(-45deg);
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(45deg);
+}
+
+.navigation.open .navlinks {
+  animation: slide-in 0.4s forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.navigation.open .search {
+  animation: slide-in 0.4s forwards;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+
+  .navigation.open {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0 auto;
+  }
+
+  .search {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+
+  .searchInput {
+    margin-top: 0;
+    margin-right: 10px;
+  }
+} */</style><style type="text/css" data-vite-dev-id="C:/Users/pk/Desktop/COURSES/SEDC-AND-COURSES-main/SEDC-AND-COURSES/SEDC AND COURSES/PROJECTS/Beer App/beer_app/src/Pages/Home/Home.css">
+/* .productSwipe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 100px auto;
+  margin-bottom: 0px;
+}
+.frDiv{
+  margin-bottom: 500px;
+}
+.firstDiv {
+  margin-bottom: 100px;
+  margin-top: 70px;
+  margin-left: 80px;
+  font-size: 2rem;
+}
+.imageContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.imgHome1 {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.imgHome2 {
+  width: 350px;
+  border-radius: 10px;
+} */
+
+
+/* @media (min-width: 460px) {
+  .imgHome {
+    width: 400px;
+  }
+}
+@media (min-width: 660px) {
+  .imgHome {
+    width: 600px;
+    height: 300px;
+  }
+  .firstDiv {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) {
+  .imgHome {
+    width: 630px;
+  }
+  .firstDiv {
+    font-size: 1rem;
+    margin-left: 90px;
+  }
+}
+
+@media (min-width: 860px) {
+  .imgHome {
+    width: 700px;
+  }
+  .firstDiv {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .imgHome {
+    width: 800px;
+    height: 440px;
+  }
+  .firstDiv {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .imgHome {
+    width: 880px;
+    height: 460px;
+  }
+  .firstDiv {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .imgHome {
+    width: 950px;
+    height: 490px;
+  }
+  .firstDiv {
+    font-size: 1.3rem;
+    margin-left: 130px;
+  }
+}
+@media (min-width: 1400px) {
+  .imgHome {
+    width: 1300px;
+    height: 500px;
+  }
+  .firstDiv {
+    font-size: 1.3rem;
+    margin-left: 60px;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .imgHome {
+    width: 1400px;
+  }
+  .firstDiv {
+    font-size: 1.3rem;
+    margin-left: 100px;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .imgHome {
+    width: 1500px;
+  }
+  .firstDiv {
+    font-size: 1.3rem;
+    margin-left: 150px;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  .imgHome {
+    width: 1700px;
+  }
+  .firstDiv {
+    font-size: 1.3rem;
+    margin-left: 150px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 2200px) {
+  .imgHome {
+    width: 1900px;
+  }
+}
+@media (min-width: 2400px) {
+  .imgHome {
+    width: 2100px;
+  }
+  .firstDiv {
+    margin-left: 230px;
+  }
+}
+@media (min-width: 2600px) {
+  .imgHome {
+    width: 2300px;
+  }
+}
+@media (min-width: 2800px) {
+  .imgHome {
+    width: 2500px;
+    height: 550px;
+  }
+}
+@media (min-width: 3000px) {
+  .imgHome {
+    width: 2700px;
+    height: 550px;
+  }
+  .firstDiv {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 3200px) {
+  .imgHome {
+    width: 2900px;
+    height: 600px;
+  }
+  .firstDiv {
+    font-size: 1.6rem;
+  }
+} */
+
+
+.productSwipe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 100px auto;
+  
+}
+  .swipeComponent{
+    margin-bottom: 100px;
+  }
+.swipeComponent h2{
+  font-size: 2rem;
+  margin: 20px;
+}
+.frDiv {
+  margin-bottom: 500px;
+}
+
+.firstDiv {
+  margin-bottom: 100px;
+  margin-top: 70px;
+  margin-left: 80px;
+  font-size: 2rem;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imgHome1 {
+  width: 100%; /* Use percentage to make images responsive */
+  max-width: 350px; /* Limit the maximum width for larger screens */
+  border-radius: 10px;
+}
+
+.imgHome2 {
+  width: 100%; /* Use percentage to make images responsive */
+  max-width: 350px; /* Limit the maximum width for larger screens */
+  border-radius: 10px;
+}
+
+/* Media Query for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+  .productSwipe {
+    width: 90%; /* Adjust the width for smaller screens */
+  }
+  
+  .firstDiv {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Media Query for even smaller screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .productSwipe {
+    width: 95%; /* Adjust the width for very small screens */
+  }
+  
+  .firstDiv {
+    margin-left: 10px; /* Further adjust margin for very small screens */
+    font-size: 1.2rem; /* Further adjust font size for very small screens */
+  }
+}
+
+/* Media Query for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+  .imageContainer {
+    flex-direction: column; /* Stack images vertically for smaller screens */
+        margin-left: 40px;
+    
+  }
+  
+  .imgHome1, .imgHome2 {
+    max-width: 90%; /* Allow images to take full width for smaller screens */
+    width: auto; /* Reset width to auto for smaller screens */
+    margin-bottom: 20px; /* Add spacing between images */
+  }
+}
+
+/* Media Query for very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .firstDiv {
+    font-size: 1.2rem; /* Further reduce font size for very small screens */
+  }
+}
+
+.swipeComponent {
+  margin: 20px auto; /* Adjust margin for better alignment */
+  text-align: center; /* Center-align the content within the .swipeComponent */
+  
+}
+
+.swipeComponent h2 {
+  font-size: 2.5rem; /* Reduce font size for better fit on smaller screens */
+  margin: 20px 0; /* Adjust margin for better spacing */
+}
+
+/* Media Query for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+  .swipeComponent {
+    margin: 10px auto; /* Further adjust margin for better alignment */
+  }
+
+  .swipeComponent h2 {
+    font-size: 1.5rem; /* Further reduce font size for smaller screens */
+  }
+}
+
+/* Media Query for very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .swipeComponent {
+    margin: 5px auto; /* Further adjust margin for very small screens */
+  }
+
+  .swipeComponent h2 {
+    font-size: 1.5rem; /* Further reduce font size for very small screens */
+  }
+}</style><style type="text/css" data-vite-dev-id="C:/Users/pk/Desktop/COURSES/SEDC-AND-COURSES-main/SEDC-AND-COURSES/SEDC AND COURSES/PROJECTS/Beer App/beer_app/src/Pages/AboutUs/AboutUs.css">/* .about-us {
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  
+}
+.pDiv {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.about-us h2 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  color: #555;
+
+  text-align: justify;
+  border: 2px solid lightgray;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+ */
+ .about-us {
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center; /* Center align content */
+  margin-bottom: 700px;
+}
+
+.pDiv {
+  display: flex;
+  flex-wrap: wrap; /* Allow text to wrap on smaller screens */
+  justify-content: center;
+  gap: 20px; /* Add spacing between paragraphs */
+}
+
+.about-us h2 {
+  font-size: 2.5rem; /* Slightly reduce the font size for smaller screens */
+  color: #333;
+  margin-bottom: 20px; /* Reduce the margin for smaller screens */
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: justify;
+  border: 2px solid lightgray;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Make paragraphs take full width on smaller screens */
+  max-width: 500px; /* Limit the maximum width for larger screens */
+}
+
+/* Media Query for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+  .about-us h2 {
+    font-size: 2rem; /* Further reduce the font size for smaller screens */
+  }
+  
+  .about-us p {
+    max-width: 400px; /* Further reduce the maximum width for larger screens */
+  }
+}
+
+/* Media Query for very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .about-us h2 {
+    font-size: 1.8rem; /* Further reduce the font size for very small screens */
+  }
+  
+  .about-us p {
+    max-width: 300px; /* Further reduce the maximum width for very small screens */
+  }
+}</style><style type="text/css" data-vite-dev-id="C:/Users/pk/Desktop/COURSES/SEDC-AND-COURSES-main/SEDC-AND-COURSES/SEDC AND COURSES/PROJECTS/Beer App/beer_app/src/Components/BeerCard/BeerCard.css">
+.beerCard {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.beerCard:hover {
+  transform: translateY(-5px);
+}
+
+.imgDiv {
+  margin-bottom: 10px;
+}
+
+.beerImg {
+  max-width: 100%;
+  
+  object-fit: contain;
+  height: 200px; 
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+b {
+  font-size: 1.2rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #777;
+  margin: 10px 0;
+}
+
+.moreDetailsBtn {
+  margin-top: 15px;
+}
+
+.moreInfo {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.moreInfo:hover {
+  background-color: #ffcc00;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/pk/Desktop/COURSES/SEDC-AND-COURSES-main/SEDC-AND-COURSES/SEDC AND COURSES/PROJECTS/Beer App/beer_app/src/Pages/Beers/Beers.css">/* .selectDiv {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  width: 120px;
+}
+option {
+  background-color: white;
+  color: black;
+} */
+
+
+.selectDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly ; /* Center the select elements horizontally */
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.page-size-select,
+.sort-by-select {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #fff; /* Background color */
+  color: #333; /* Text color */
+}
+
+/* Style the dropdown arrow icon */
+
+.beers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 100px;
+}
+
+@media (min-width: 768px) {
+}
+.body {
+  margin: 0;
+  background-color: #f0f0f0;
+  display: flex; /* Ensure the body takes up the entire height */
+  justify-content: center; /* Center the loader vertically */
+  align-items: center; /* Center the loader horizontally */
+  height: 100vh; /* Set a fixed height to ensure the loader is centered properly */
+}
+
+.loader {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #9255c5;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: relative; /* Change from 'absolute' to 'relative' */
+  margin: 0 auto; /* Center the loader horizontally */
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.custom-pagination .MuiPagination-ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+.custom-pagination .MuiPaginationItem-root {
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-pagination .MuiPaginationItem-root:hover {
+  background-color: #ffcc00;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .custom-pagination .MuiPaginationItem-root {
+    font-size: 14px;
+    width: 36px;
+    height: 36px;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/pk/Desktop/COURSES/SEDC-AND-COURSES-main/SEDC-AND-COURSES/SEDC AND COURSES/PROJECTS/Beer App/beer_app/src/Pages/RandomBeer/RandomBeer.css">.containerOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+  width: 300px;
+}
+.containerTwo {
+  width: 300px;
+  font-size: 1.2rem;
+}
+.randomBeerImg {
+  width: 100px;
+  height: 300px;
+}
+.containerThree {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+li {
+  list-style: none;
+  padding: 20px;
+  color: gray;
+}
+.heading-container {
+  margin-bottom: 30px;
+  border-bottom: 1px solid grey;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+}
+
+@media (min-width: 660px) {
+  .containerTwo {
+    width: 500px;
+  }
+  .containerOne {
+    width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .containerTwo {
+    width: 600px;
+  }
+  .containerOne {
+    width: 600px;
+  }
+}
+@media (min-width: 968px) {
+  .containerTwo {
+    width: 700px;
+  }
+  .containerOne {
+    width: 700px;
+  }
+  .randomBeerImg {
+    width: 150px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .containerTwo {
+    width: 700px;
+  }
+  .containerOne {
+    width: 700px;
+  }
+
+  .heading-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  .containerOne {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+  }
+  .containerTwo {
+    width: 1000px;
+  }
+  .randomBeerImg {
+    width: 160px;
+
+    margin-right: 100px;
+  }
+}
+@media (min-width: 1400px) {
+  .containerOne {
+    width: 1200px;
+  }
+  .containerTwo {
+    width: 800px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .containerOne {
+    width: 1200px;
+
+    justify-content: space-around;
+  }
+  .containerTwo {
+    width: 500px;
+  }
+}
+@media (min-width: 2000px) {
+  .containerOne {
+    width: 1300px;
+  }
+  .containerTwo {
+    width: 700px;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/pk/Desktop/COURSES/SEDC-AND-COURSES-main/SEDC-AND-COURSES/SEDC AND COURSES/PROJECTS/Beer App/beer_app/src/Pages/SingleBeer/SingleBeer.css">.containerOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+  width: 300px;
+}
+.containerTwo {
+  width: 300px;
+  font-size: 1.2rem;
+}
+.singleBeerImg {
+  width: 100px;
+  height: 300px;
+}
+.containerThree {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+li {
+  list-style: none;
+  padding: 20px;
+  color: gray;
+}
+.heading-container {
+  margin-bottom: 30px;
+  border-bottom: 1px solid grey;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+}
+
+@media (min-width: 660px) {
+  .containerTwo {
+    width: 500px;
+  }
+  .containerOne {
+    width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .containerTwo {
+    width: 600px;
+  }
+  .containerOne {
+    width: 600px;
+  }
+}
+@media (min-width: 968px) {
+  .containerTwo {
+    width: 700px;
+  }
+  .containerOne {
+    width: 700px;
+  }
+  .singleBeerImg {
+    width: 150px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .containerTwo {
+    width: 700px;
+  }
+  .containerOne {
+    width: 700px;
+  }
+  .singleBeerImg {
+    width: 150px;
+    height: 400px;
+  }
+  .heading-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  .containerOne {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+  }
+  .containerTwo {
+    width: 1000px;
+  }
+  .singleBeerImg {
+    width: 160px;
+
+    margin-right: 100px;
+  }
+}
+@media (min-width: 1400px) {
+  .containerOne {
+    width: 1200px;
+  }
+  .containerTwo {
+    width: 800px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .containerOne {
+    width: 1200px;
+
+    justify-content: space-around;
+  }
+  .containerTwo {
+    width: 500px;
+  }
+}
+@media (min-width: 2000px) {
+  .containerOne {
+    width: 1300px;
+  }
+  .containerTwo {
+    width: 700px;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/pk/Desktop/COURSES/SEDC-AND-COURSES-main/SEDC-AND-COURSES/SEDC AND COURSES/PROJECTS/Beer App/beer_app/src/index.css">*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+</style><style></style><style data-styled="active" data-styled-version="5.3.11"></style><style data-emotion="css" data-s="">.css-0{}</style><style data-emotion="css" data-s="">.css-xl4503{-webkit-animation-duration:1000ms;animation-duration:1000ms;-webkit-animation-timing-function:ease;animation-timing-function:ease;-webkit-animation-delay:0ms;animation-delay:0ms;-webkit-animation-name:animation-1rg2aqu;animation-name:animation-1rg2aqu;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-iteration-count:1;animation-iteration-count:1;}</style><style data-emotion="css" data-s="">@media (prefers-reduced-motion: reduce){.css-xl4503{-webkit-animation:none;animation:none;}}</style><style data-emotion="css" data-s="">@-webkit-keyframes animation-1rg2aqu{from{opacity:0;-webkit-transform:translate3d(-100%, 0, 0);-moz-transform:translate3d(-100%, 0, 0);-ms-transform:translate3d(-100%, 0, 0);transform:translate3d(-100%, 0, 0);}to{opacity:1;-webkit-transform:translate3d(0, 0, 0);-moz-transform:translate3d(0, 0, 0);-ms-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}}</style><style data-emotion="css" data-s="">@keyframes animation-1rg2aqu{from{opacity:0;-webkit-transform:translate3d(-100%, 0, 0);-moz-transform:translate3d(-100%, 0, 0);-ms-transform:translate3d(-100%, 0, 0);transform:translate3d(-100%, 0, 0);}to{opacity:1;-webkit-transform:translate3d(0, 0, 0);-moz-transform:translate3d(0, 0, 0);-ms-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}}</style><style data-emotion="css" data-s="">.css-y5zeoq{-webkit-animation-duration:1000ms;animation-duration:1000ms;-webkit-animation-timing-function:ease;animation-timing-function:ease;-webkit-animation-delay:0ms;animation-delay:0ms;-webkit-animation-name:animation-9e64fq;animation-name:animation-9e64fq;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-iteration-count:1;animation-iteration-count:1;}</style><style data-emotion="css" data-s="">@media (prefers-reduced-motion: reduce){.css-y5zeoq{-webkit-animation:none;animation:none;}}</style><style data-emotion="css" data-s="">@-webkit-keyframes animation-9e64fq{from{opacity:0;-webkit-transform:translate3d(100%, 0, 0);-moz-transform:translate3d(100%, 0, 0);-ms-transform:translate3d(100%, 0, 0);transform:translate3d(100%, 0, 0);}to{opacity:1;-webkit-transform:translate3d(0, 0, 0);-moz-transform:translate3d(0, 0, 0);-ms-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}}</style><style data-emotion="css" data-s="">@keyframes animation-9e64fq{from{opacity:0;-webkit-transform:translate3d(100%, 0, 0);-moz-transform:translate3d(100%, 0, 0);-ms-transform:translate3d(100%, 0, 0);transform:translate3d(100%, 0, 0);}to{opacity:1;-webkit-transform:translate3d(0, 0, 0);-moz-transform:translate3d(0, 0, 0);-ms-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}}</style><style data-emotion="css" data-s="">.css-1bpp39o{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:nowrap;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;margin-top:50px;margin-bottom:50px;}</style><style data-emotion="css" data-s="">.css-1oj2twp-MuiPagination-root{}</style><style data-emotion="css" data-s="">.css-wjh20t-MuiPagination-ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0;margin:0;list-style:none;}</style><style data-emotion="css" data-s="">.css-1e3wl5k-MuiPaginationItem-root{font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:0.875rem;line-height:1.43;letter-spacing:0.01071em;border-radius:4px;text-align:center;box-sizing:border-box;min-width:32px;height:32px;padding:0 6px;margin:0 3px;color:rgba(0, 0, 0, 0.87);-webkit-transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;border:1px solid rgba(0, 0, 0, 0.23);}</style><style data-emotion="css" data-s="">.css-1e3wl5k-MuiPaginationItem-root.Mui-focusVisible{background-color:rgba(0, 0, 0, 0.12);}</style><style data-emotion="css" data-s="">.css-1e3wl5k-MuiPaginationItem-root.Mui-disabled{opacity:0.38;}</style><style data-emotion="css" data-s="">.css-1e3wl5k-MuiPaginationItem-root:hover{background-color:rgba(0, 0, 0, 0.04);}</style><style data-emotion="css" data-s="">@media (hover: none){.css-1e3wl5k-MuiPaginationItem-root:hover{background-color:transparent;}}</style><style data-emotion="css" data-s="">.css-1e3wl5k-MuiPaginationItem-root.Mui-selected{background-color:rgba(0, 0, 0, 0.08);}</style><style data-emotion="css" data-s="">.css-1e3wl5k-MuiPaginationItem-root.Mui-selected:hover{background-color:rgba(0, 0, 0, 0.12);}</style><style data-emotion="css" data-s="">@media (hover: none){.css-1e3wl5k-MuiPaginationItem-root.Mui-selected:hover{background-color:rgba(0, 0, 0, 0.08);}}</style><style data-emotion="css" data-s="">.css-1e3wl5k-MuiPaginationItem-root.Mui-selected.Mui-focusVisible{background-color:rgba(0, 0, 0, 0.2);}</style><style data-emotion="css" data-s="">.css-1e3wl5k-MuiPaginationItem-root.Mui-selected.Mui-disabled{opacity:1;color:rgba(0, 0, 0, 0.26);background-color:rgba(0, 0, 0, 0.08);}</style><style data-emotion="css" data-s="">.css-1e3wl5k-MuiPaginationItem-root.Mui-selected{}</style><style data-emotion="css" data-s="">.css-1e3wl5k-MuiPaginationItem-root.Mui-selected.Mui-disabled{border-color:rgba(0, 0, 0, 0.12);color:rgba(0, 0, 0, 0.26);}</style><style data-emotion="css" data-s="">.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:0.875rem;line-height:1.43;letter-spacing:0.01071em;border-radius:4px;text-align:center;box-sizing:border-box;min-width:32px;height:32px;padding:0 6px;margin:0 3px;color:rgba(0, 0, 0, 0.87);-webkit-transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;border:1px solid rgba(0, 0, 0, 0.23);}</style><style data-emotion="css" data-s="">.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root::-moz-focus-inner{border-style:none;}</style><style data-emotion="css" data-s="">.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-disabled{pointer-events:none;cursor:default;}</style><style data-emotion="css" data-s="">@media print{.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root{-webkit-print-color-adjust:exact;color-adjust:exact;}}</style><style data-emotion="css" data-s="">.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-focusVisible{background-color:rgba(0, 0, 0, 0.12);}</style><style data-emotion="css" data-s="">.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-disabled{opacity:0.38;}</style><style data-emotion="css" data-s="">.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root:hover{background-color:rgba(0, 0, 0, 0.04);}</style><style data-emotion="css" data-s="">@media (hover: none){.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root:hover{background-color:transparent;}}</style><style data-emotion="css" data-s="">.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{background-color:rgba(0, 0, 0, 0.08);}</style><style data-emotion="css" data-s="">.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected:hover{background-color:rgba(0, 0, 0, 0.12);}</style><style data-emotion="css" data-s="">@media (hover: none){.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected:hover{background-color:rgba(0, 0, 0, 0.08);}}</style><style data-emotion="css" data-s="">.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected.Mui-focusVisible{background-color:rgba(0, 0, 0, 0.2);}</style><style data-emotion="css" data-s="">.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected.Mui-disabled{opacity:1;color:rgba(0, 0, 0, 0.26);background-color:rgba(0, 0, 0, 0.08);}</style><style data-emotion="css" data-s="">.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{}</style><style data-emotion="css" data-s="">.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected.Mui-disabled{border-color:rgba(0, 0, 0, 0.12);color:rgba(0, 0, 0, 0.26);}</style><style data-emotion="css" data-s="">.css-ytd7wl-MuiPaginationItem-icon{font-size:1.25rem;margin:0 -8px;}</style><style data-emotion="css" data-s="">.css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:1.5rem;font-size:1.25rem;margin:0 -8px;}</style><style data-emotion="css" data-s="">.css-8je8zh-MuiTouchRipple-root{overflow:hidden;pointer-events:none;position:absolute;z-index:0;top:0;right:0;bottom:0;left:0;border-radius:inherit;}</style></head>
+  <body>
+    <div id="root"><header><div class="burger-menu open"><div class="bar"></div><div class="bar"></div><div class="bar"></div></div><nav class="navigation open"><ul class="navlinks"><a class="link" href="http://localhost:5173/"><li>Beer Bar</li></a><a class="link" href="http://localhost:5173/beers"><li>Beers</li></a><a class="link" href="http://localhost:5173/random_beer"><li style="color: grey;">Random Beer</li></a></ul><div class="search"><input class="searchInput" type="text" placeholder="Search" value=""></div></nav></header><div class="selectDiv"><select class="page-size-select" name="page-size"><option value="25">Show All</option><option value="5">Show 5</option><option value="10">Show 10</option><option value="20">Show 20</option></select><select class="sort-by-select" name="sort-by"><optgroup label="Sort By"><option disabled="" hidden="">Sort By</option></optgroup><option value="name">name</option><option value="abv-asc">Alcohol % asc</option><option value="abv-desc">Alcohol % desc</option><option value="ibu-asc">Bitterness asc</option><option value="ibu-desc">Bitterness desc</option></select></div><div class="beers"><div class="react-reveal beerCard" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-327205177503636-1;"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/keg.png" alt=""></div><div><b>Buzz</b></div><div class="tagline">A Real Bitter Experience.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-327205177503636-1;"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/2.png" alt=""></div><div><b>Trashy Blonde</b></div><div class="tagline">You Know You Shouldn't</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-327205177503636-1;"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/keg.png" alt=""></div><div><b>Berliner Weisse With Yuzu - B-Sides</b></div><div class="tagline">Japanese Citrus Berliner Weisse.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-327205177503636-1;"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/4.png" alt=""></div><div><b>Pilsen Lager</b></div><div class="tagline">Unleash the Yeast Series.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-327205177503636-1;"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/5.png" alt=""></div><div><b>Avery Brown Dredge</b></div><div class="tagline">Bloggers' Imperial Pilsner.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-327205177503636-1;"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/6.png" alt=""></div><div><b>Electric India</b></div><div class="tagline">Vibrant Hoppy Saison.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-327205177503636-1;"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/7.png" alt=""></div><div><b>AB:12</b></div><div class="tagline">Imperial Black Belgian Ale.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-327205177503636-1;"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/8.png" alt=""></div><div><b>Fake Lager</b></div><div class="tagline">Bohemian Pilsner.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-327205177503636-1;"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/9.png" alt=""></div><div><b>AB:07</b></div><div class="tagline">Whisky Cask-Aged Scotch Ale.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard" style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-327205177503636-1;"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/10.png" alt=""></div><div><b>Bramling X</b></div><div class="tagline">Single Hop IPA Series - 2011.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/keg.png" alt=""></div><div><b>Misspent Youth</b></div><div class="tagline">Milk &amp; Honey Scotch Ale.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/12.png" alt=""></div><div><b>Arcade Nation</b></div><div class="tagline">Seasonal Black IPA.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/13.png" alt=""></div><div><b>Movember</b></div><div class="tagline">Moustache-Worthy Beer.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/14.png" alt=""></div><div><b>Alpha Dog</b></div><div class="tagline">Existential Red Ale.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/15.png" alt=""></div><div><b>Mixtape 8</b></div><div class="tagline">An Epic Fusion Of Old Belgian, American New Wave, And Scotch Whisky.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/16.png" alt=""></div><div><b>Libertine Porter</b></div><div class="tagline">Dry-Hopped Aggressive Porter.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/17.png" alt=""></div><div><b>AB:06</b></div><div class="tagline">Imperial Black IPA.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/18.png" alt=""></div><div><b>Russian Doll – India Pale Ale</b></div><div class="tagline">Nesting Hop Bomb.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/19.png" alt=""></div><div><b>Hello My Name Is Mette-Marit</b></div><div class="tagline">Lingonberry Double IPA.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/keg.png" alt=""></div><div><b>Rabiator</b></div><div class="tagline">Imperial Wheat Beer</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/keg.png" alt=""></div><div><b>Vice Bier</b></div><div class="tagline">Hoppy Wheat Bier.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/22.png" alt=""></div><div><b>Devine Rebel (w/ Mikkeller)</b></div><div class="tagline">Oak-aged Barley Wine.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/23.png" alt=""></div><div><b>Storm</b></div><div class="tagline">Islay Whisky Aged IPA.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/24.png" alt=""></div><div><b>The End Of History</b></div><div class="tagline">The World's Strongest Beer.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div><div class="react-reveal beerCard"><div class="imgDiv"><img class="beerImg" src="./My Beer App_files/25.png" alt=""></div><div><b>Bad Pixie</b></div><div class="tagline">Spiced Wheat Beer.</div><div class="moreDetailsBtn"><button class="moreInfo">More details</button></div></div></div><div class="MuiBox-root css-1bpp39o"><nav aria-label="pagination navigation" class="MuiPagination-root MuiPagination-outlined custom-pagination css-1oj2twp-MuiPagination-root"><ul class="MuiPagination-ul css-wjh20t-MuiPagination-ul"><li><button class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-disabled MuiPaginationItem-previousNext css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root" tabindex="-1" type="button" disabled="" aria-label="Go to previous page"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="NavigateBeforeIcon"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg></button></li><li><button class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-selected MuiPaginationItem-page css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root" tabindex="0" type="button" aria-current="true" aria-label="page 1">1<span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button></li><li><button class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-rounded Mui-disabled MuiPaginationItem-previousNext css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root" tabindex="-1" type="button" disabled="" aria-label="Go to next page"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="NavigateNextIcon"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></li></ul></nav></div></div>
+    <script type="module" src="./My Beer App_files/main.jsx"></script>
+  
+
+</body></html>

@@ -1,0 +1,91 @@
+/* .about-us {
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  
+}
+.pDiv {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.about-us h2 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  color: #555;
+
+  text-align: justify;
+  border: 2px solid lightgray;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+ */
+ .about-us {
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center; /* Center align content */
+  margin-bottom: 700px;
+}
+
+.pDiv {
+  display: flex;
+  flex-wrap: wrap; /* Allow text to wrap on smaller screens */
+  justify-content: center;
+  gap: 20px; /* Add spacing between paragraphs */
+}
+
+.about-us h2 {
+  font-size: 2.5rem; /* Slightly reduce the font size for smaller screens */
+  color: #333;
+  margin-bottom: 20px; /* Reduce the margin for smaller screens */
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: justify;
+  border: 2px solid lightgray;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Make paragraphs take full width on smaller screens */
+  max-width: 500px; /* Limit the maximum width for larger screens */
+}
+
+/* Media Query for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+  .about-us h2 {
+    font-size: 2rem; /* Further reduce the font size for smaller screens */
+  }
+  
+  .about-us p {
+    max-width: 400px; /* Further reduce the maximum width for larger screens */
+  }
+}
+
+/* Media Query for very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .about-us h2 {
+    font-size: 1.8rem; /* Further reduce the font size for very small screens */
+  }
+  
+  .about-us p {
+    max-width: 300px; /* Further reduce the maximum width for very small screens */
+  }
+}

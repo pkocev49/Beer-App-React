@@ -1,0 +1,118 @@
+/* .selectDiv {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  width: 120px;
+}
+option {
+  background-color: white;
+  color: black;
+} */
+
+
+.selectDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly ; /* Center the select elements horizontally */
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.page-size-select,
+.sort-by-select {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #fff; /* Background color */
+  color: #333; /* Text color */
+}
+
+/* Style the dropdown arrow icon */
+
+.beers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 100px;
+}
+
+@media (min-width: 768px) {
+}
+.body {
+  margin: 0;
+  background-color: #f0f0f0;
+  display: flex; /* Ensure the body takes up the entire height */
+  justify-content: center; /* Center the loader vertically */
+  align-items: center; /* Center the loader horizontally */
+  height: 100vh; /* Set a fixed height to ensure the loader is centered properly */
+}
+
+.loader {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #9255c5;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: relative; /* Change from 'absolute' to 'relative' */
+  margin: 0 auto; /* Center the loader horizontally */
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.custom-pagination .MuiPagination-ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+.custom-pagination .MuiPaginationItem-root {
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-pagination .MuiPaginationItem-root:hover {
+  background-color: #ffcc00;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .custom-pagination .MuiPaginationItem-root {
+    font-size: 14px;
+    width: 36px;
+    height: 36px;
+  }
+}
