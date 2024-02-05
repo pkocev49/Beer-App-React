@@ -1,5 +1,5 @@
 # Beer-App-React
-Welcome to the Beer web app, your ultimate destination for discovering a diverse selection of beers. This app offers a user-friendly experience with various features to enhance your beer exploration journey:
+
 
 1. Home Section:
 
